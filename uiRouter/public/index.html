@@ -1,0 +1,18 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <meta charset="utf-8">
+        <meta name="viewport" content="width=device-width">
+        <script src="https://code.angularjs.org/1.6.6/angular.min.js"></script>
+        <script src="//unpkg.com/@uirouter/angularjs/release/angular-ui-router.min.js"></script>
+        <script src="js/apps/soccerApp.js"></script>
+        <title>Routing Test</title>
+    </head>
+    <body ng-app="soccerApp">
+        <h1>Home</h1>
+        <a ui-sref="home">HOME</a>
+        <a ui-sref="entry">ENTRY</a>
+        <a ui-sref="teamadmin">TEAM</a>
+        <ui-view></ui-view>
+    </body>
+</html>
