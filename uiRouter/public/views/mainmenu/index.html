@@ -1,10 +1,12 @@
-<div ng-app="soccerApp">
-    <h1>Home</h1>
-    <a ui-sref="main/home">HOME TAB</a>
-    <a ui-sref="entry">ENTRY TAB</a>
-    <a ui-sref="teamadmin">TEAM TAB</a>
+<div>
+    <h1><a ui-sref="main.home">Home</a></h1>
     
-    <div ui-view="main.home"></div>
+    <a ui-sref="main.teamadmin">TEAM TAB</a>
+    <a ui-sref="main.home">HOME TAB</a>
+    <a ui-sref="main.entry">ENTRY TAB</a>
+    
+    
+    <div ui-view="home"></div>
     <div ui-view="entry"></div>
     <div ui-view="teamadmin"></div>
 </div>

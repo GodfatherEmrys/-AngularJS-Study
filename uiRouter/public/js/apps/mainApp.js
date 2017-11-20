@@ -1,5 +1,6 @@
-angular.module('mainApp',['soccerApp','ui.router'])
+angular.module('mainApp',['ui.router'])
 .config(function($stateProvider, $urlRouterProvider){
+    
     var signinState = {
         url: '/',
         views: {
@@ -28,11 +29,27 @@ angular.module('mainApp',['soccerApp','ui.router'])
         }
     };
     
+    var entryState = {
+        url: '/entry',
+        views: {
+            'entry' : { templateUrl: 'views/mainmenu/entry.html' }    
+        }
+    };
     
+    var teamadminState = {
+        url: '/teamadmin',
+        views: {
+            'teamadmin' : { templateUrl: 'views/mainmenu/teamadmin.html' }    
+        }
+        
+    }
     
     $stateProvider.state('signin',signinState);
     $stateProvider.state('signup',signupState);
     $stateProvider.state('main',mainState);
     $stateProvider.state('main.home',homeState);
+    $stateProvider.state('main.entry',entryState);
+    $stateProvider.state('main.teamadmin',teamadminState);
+    
     $urlRouterProvider.otherwise("/");
 });
