@@ -6,13 +6,12 @@
         <script src="https://code.angularjs.org/1.6.6/angular.min.js"></script>
         <script src="//unpkg.com/@uirouter/angularjs/release/angular-ui-router.min.js"></script>
         <script src="js/apps/soccerApp.js"></script>
+        <script src="js/apps/mainApp.js"></script>
         <title>Routing Test</title>
     </head>
-    <body ng-app="soccerApp">
-        <h1>Home</h1>
-        <a ui-sref="home">HOME</a>
-        <a ui-sref="entry">ENTRY</a>
-        <a ui-sref="teamadmin">TEAM</a>
-        <ui-view></ui-view>
+    <body ng-app="mainApp">
+        <div ui-view="signin"></div>
+        <div ui-view="signup"></div>
+        <div ui-view="main"></div>
     </body>
 </html>
