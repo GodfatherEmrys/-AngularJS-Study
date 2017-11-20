@@ -1,7 +1,18 @@
-<div>
-    <h1>로그인 화면</h1>
-    <input type="text" name="userid">
-    <input type="password" name="userpassword">
-    <a ui-sref="main">접속</a>
-    <a ui-sref="signup">회원가입</a>
+<div class="signin_background">
+    <h1>Soccer Manager</h1>
+    <h2>2017</h2>
+    <div class="input-group">
+        <span class="input-group-addon">
+            <img src="../../images/glyphicons_free/glyphicons/png/glyphicons-4-user.png">
+        </span>
+        <input type="text" class="form-control" name="userid">
+    </div>
+    <div class="input-group">
+        <span class="input-group-addon">
+            <img src="../../images/glyphicons_free/glyphicons/png/glyphicons-45-keys.png">
+        </span>
+        <input type="password" class="form-control" name="userpassword">
+    </div>
+    <button class="btn btn-primary btn-block" ui-sref="main">접속</button>
+    <button class="btn btn-light btn-block" ui-sref="signup">회원가입</button>
 </div>
