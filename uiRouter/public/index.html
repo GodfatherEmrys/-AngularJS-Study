@@ -13,6 +13,7 @@
         <link rel="stylesheet" href="css/font.css">
         <link rel="stylesheet" href="css/flexible.css">
         <link rel="stylesheet" href="css/background.css">
+        <link rel="stylesheet" href="css/customBootstrap.css">
         
         <!-- jQuery -->
         <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
@@ -24,11 +25,11 @@
         
         <title>Routing Test</title>
     </head>
-    <body ng-app="mainApp" class="signin_background" style="padding: 10px 10px 10px 10px;">
+    <body ng-app="mainApp" class="signin_background">
         <div class="height_full" style="display: flex; flex-direction: column;">
             <div ui-view="signin"></div>
             <div ui-view="signup"></div>
-            <div ui-view="main"></div>
+            <div ui-view="main" style="display: flex; flex-direction: column; align-items: center; justify-content: space-between;"></div>
         </div>
     </body>
 </html>

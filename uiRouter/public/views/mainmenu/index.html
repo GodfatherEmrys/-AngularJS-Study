@@ -1,12 +1,31 @@
-<div>
-    <h1><a ui-sref="logout">MainMenu</a></h1>
+<div class="container-fluid">
     
-    <a ui-sref="main.teamadmin">TEAM TAB</a>
-    <a ui-sref="main.home">HOME TAB</a>
-    <a ui-sref="main.entry">ENTRY TAB</a>
-    
+    <div class="menu_and_tab">
+        <div style="display: flex; justify-content: space-between;">
+            <div>
+                <img src="" alt="프로필 사진">
+                <span>{{"매니저"}}님 환영합니다.</span>
+            </div>
+            <a ui-sref="logout">Logout</a>
+        </div>
+        <div style="height: 50px; display: flex; justify-content: space-around;">
+            <button ui-sref="main.teamadmin" style="flex:1;">
+                <img src="../../images/glyphicons_free/glyphicons/png/glyphicons-500-family.png"><br>
+                팀 관리
+            </button>
+            <button ui-sref="main.home" style="flex:1;">
+                <img src="../../images/glyphicons_free/glyphicons/png/glyphicons-87-display.png"><br>
+                홈
+            </button>
+            <button ui-sref="main.entry" style="flex:1;">
+                <img src="../../images/glyphicons_free/glyphicons/png/glyphicons-509-flowchart.png"><br>
+                엔트리 구성
+            </button>
+        </div>
+    </div>
     
     <div ui-view="home"></div>
     <div ui-view="entry"></div>
     <div ui-view="teamadmin"></div>
+    
 </div>
