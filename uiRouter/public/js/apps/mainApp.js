@@ -42,7 +42,15 @@ angular.module('mainApp',['ui.router'])
             'teamadmin' : { templateUrl: 'views/mainmenu/teamadmin.html' }    
         }
         
-    }
+    };
+    
+    var logoutState = {
+        url: '/logout',
+        views: {
+            'signin' : { templateUrl: 'views/account/signin.html' }    
+        }
+        
+    };
     
     $stateProvider.state('signin',signinState);
     $stateProvider.state('signup',signupState);
@@ -50,6 +58,6 @@ angular.module('mainApp',['ui.router'])
     $stateProvider.state('main.home',homeState);
     $stateProvider.state('main.entry',entryState);
     $stateProvider.state('main.teamadmin',teamadminState);
-    
+    $stateProvider.state('logout',logoutState);
     $urlRouterProvider.otherwise("/");
 });

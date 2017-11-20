@@ -1,0 +1,32 @@
+html, body {
+    height: 100%;
+    overflow: hidden;
+}
+
+.height_full {
+    height: 100%;
+}
+
+.flex_display {
+    display: flex;
+}
+
+.flex-direction_column {
+    flex-direction: column;
+}
+
+.justify-content_space-between {
+    justify-content: space-between;   
+}
+
+.justify-content_space-around {
+    justify-content: space-around;   
+}
+
+.flex_control {
+    flex: 1;
+    align-content: center;
+    justify-content: center;
+    flex-basis: 100%;
+    height: 100%;
+}
